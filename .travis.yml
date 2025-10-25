@@ -6,7 +6,7 @@ services:
 before_install:
   - docker build -t mannj99/docker-react -f Dockerfile.dev .
 
-scripts:
+script:
   - docker run -e CI=true mannj99/docker-react npm run test
 
 deploy:
@@ -18,5 +18,5 @@ deploy:
   bucket_path: "frontend"
   on:
     branch: master
-  access_key_id: AWS_ACCESS_KEY
+  access_key_id: $AWS_ACCESS_KEY
   secret_access_key: "$AWS_SECRET_KEY"
