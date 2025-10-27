@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Chaning the application file to test the new branch
+          Changing the application file to test the new branch
         </p>
         <a
           className="App-link"
